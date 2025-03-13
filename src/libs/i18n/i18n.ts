@@ -19,7 +19,7 @@ i18n
       escapeValue: false,
     },
     backend: {
-      loadPath: 'src/locales/{{lng}}.json',
+      loadPath: '/locales/{{lng}}.json',
     },
     detection: {
       order: ['localStorage', 'navigator'],
