@@ -29,10 +29,14 @@ const useImageProcessing = (
       } catch (error) {
         const axiosError = error as AxiosError;
         if (axiosError.response && axiosError.response.data) {
-          throw new Error(
-            (axiosError.response.data as ImageProcessingErrorResponse)
-              .details || 'Unknown error occurred',
-          );
+          const { data, status } = axiosError.response;
+          const typedData = data as ImageProcessingErrorResponse;
+
+          if (status === 500) {
+            throw new Error(typedData.details || 'Unknown error occurred');
+          } else {
+            throw new Error(typedData.error || 'Unknown error occurred');
+          }
         }
         throw error;
       }

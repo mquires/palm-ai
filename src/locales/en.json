@@ -11,7 +11,10 @@
   "palmReader": {
     "heading": "Analyze Your Palm",
     "remainingCalls": "Remaining calls: {{count}}",
-    "analyze": "Analyze"
+    "analyze": "Analyze",
+    "serverError[Превышен лимит вызовов]": "Call limit exceeded",
+    "serverError[Недопустимый актор или отсутствует изображение]": "Invalid actor or image missing",
+    "serverError[Неверный метод запроса]": "Invalid request method"
   },
   "components": {
     "fileController": {

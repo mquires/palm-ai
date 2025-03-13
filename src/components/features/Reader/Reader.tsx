@@ -47,7 +47,11 @@ const Reader = () => {
     },
     onError: (error: Error) => {
       const errorMessage = error.message || t('common.error');
-      toast.error(errorMessage);
+      const localizedMessage = t(`palmReader.serverError[${errorMessage}]`, {
+        defaultValue: error.message,
+      });
+
+      toast.error(localizedMessage);
     },
   });
 

@@ -9,5 +9,6 @@ export interface ImageProcessingResponse {
 }
 
 export interface ImageProcessingErrorResponse {
+  error?: string;
   details?: string;
 }
