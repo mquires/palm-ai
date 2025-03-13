@@ -46,4 +46,4 @@ VITE_X_ACTOR=your_actor
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to view the application.
+Open [http://localhost:3000](http://localhost:3000) to view the application or [https://mquires.github.io/palm-ai/](https://mquires.github.io/palm-ai/) in Github Pages.
