@@ -1,4 +1,24 @@
 {
-  "welcome": "Добро пожаловать в наше приложение!",
-  "description": "Это простой пример интернационализации."
+  "header": {
+    "languagePlaceholder": "Выберите язык",
+    "modeToggle": {
+      "heading": "Переключить тему",
+      "light": "Светлая",
+      "dark": "Темная",
+      "system": "Системная"
+    }
+  },
+  "palmReader": {
+    "heading": "Проанализируйте свою ладонь",
+    "remainingCalls": "Осталось вызовов: {{count}}",
+    "analyze": "Анализировать"
+  },
+  "components": {
+    "fileController": {
+      "upload": "Загрузить файл"
+    }
+  },
+  "common": {
+    "error": "Произошла ошибка"
+  }
 }
