@@ -19,7 +19,7 @@ const themes = [
 
 export const ModeToggle = () => {
   const { setTheme } = useTheme();
-  const { t } = useTranslation('header');
+  const { t } = useTranslation();
 
   return (
     <DropdownMenu>
